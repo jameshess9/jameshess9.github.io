@@ -1,1 +1,14 @@
-hello world
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <title>Give Your Page a Good Title</title>
+</head>
+<body>
+  c {
+     color: green;
+     font-size: 20px;
+     text-align: center;
+  }
+</body>
+</html>
