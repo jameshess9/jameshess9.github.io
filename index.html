@@ -1,69 +1,122 @@
- 
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    
-    
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>James Hess's Website</title>
-    
-    
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
     <style>
+    h3  {font-family: "Times New Roman", Times, serif;}
+    body  {
+    background: url(sayagata-400px.png) repeat 0 0;
+}
+    ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
 
-      body {
-       
-       font-family: "Times New Roman", Times, serif;
-       background-color: lightblue;
-       font-size: 30px;
-     }
 
-      
-    </style>
+ul.tab li {float: left;}
+
+
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+
+ul.tab li a:hover {background-color: #ddd;}
+
+
+ul.tab li a:focus, .active {background-color: #ccc;}
+
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+</style>
   </head>
   <body>
-    <h1> The best website ever <small>by James Hess</small></h1>
-    <div class="row">
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-        I am a college student currently attending the University at Buffalo. I currently am taking CSE 115 and CSE 199. These classes will be the foundation in my computer science career.
-      </div>     
+    <div>
+      <p><font size="10" color="blue"> James Hess's Website </font></p>
     </div>
-    <div class="row">
-       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-        I am a <mark> COMPUTER SCIENCE </mark> major.
-      </div>
-    </div>  
-    <div class="row">
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-        <p class="text-center">Currently I am involved in the Outdoor Adventure Club, intramural soccer and the honors college</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-        Dont click on this <a class="btn btn-default" href="http://pix.iemoji.com/images/emoji/apple/ios-9/256/slightly-frowning-face.png" role="button">Link</a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-        <p class="text-center">My family includes me, my Mom, my Dad, my youngest sister Olivia, and my older sister Emily.</p>
-        <p class="text-center">I am the oldest child of the family at 18, with Emily being 16 and Olivia 10.</p>
-      </div>
-    </div>
+    <ul class="tab">
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Past')">Past</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Present')">Present</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Future')">Future</a></li>
+</ul>
+
+<div id="Past" class="tabcontent">
+  <h3>Past</h3>
+  <p>I was born on May 9th, 1998. I was born in Endicott New York, which is where I lived for the first 12 years of my life</p>
+  <p>Once I turned 12, my family moved from Endicott to Endwell. This was a short move, roughly only 10 minutes away. </p>
+  <p>We moved to change school districts, because Maine-Endwell Highschool had better sports and academics. I played all</p>
+  <p>my sports at Maine-Endwell as a kid, so I also had a lot of friends their. I stayed here untill I went to college at</p>
+  <p>the University at Buffalo.</p>
+</div>
+
+<div id="Present" class="tabcontent">
+  <h3>Present</h3>
+  <p>Currently I attend the University at Buffalo. I am a freshman approaching my second semester here and I already</p>
+  <p>love it. I am currently enrolled in CSE115, CSE199, MTH141, ECO182 and HON214. These classes are all interesting</p>
+  <p>and important in there own ways, but CSE115 and CSE199 are the most important to me. This is because they are</p>
+  <p>computer science classes and I am a computer science major. These classes are the foundation for my entire</p>
+  <p>computer science career.</p>
+</div>
+
+<div id="Future" class="tabcontent">
+  <h3>Future</h3>
+  <p>In the future I plan on getting my masters in computer science. I am undecided on my grad school options</p>
+  <p>probably leaning towards UB's finish your masters in 5 years program. This will allow me to have many job</p>
+  <p>options in the future, allowing me to do what ever I want. This is nice because currently, I'm not exactly</p>
+  <p>sure which branch of computer science that I actually want to go into. I plan on getting internships at some</p>
+  <p>point in my college career, which will help me explore the different usages of computer science, allowing me</p>
+  <p>to intelligently choose exactly what I want to do for the rest of my life</p>
+</div>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script>
+    function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
   </body>
 </html>
